@@ -6,9 +6,9 @@
   --surface2:   #F1F1EF;
   --border:     #E3E3DF;
   --text:       #24262B;
-  --muted:      #6E7076;
-  --accent:     #457086;
-  --warm:       #96633A;
+  --muted:      #4F5258;
+  --accent:     #3D6579;
+  --warm:       #7E5230;
   --warm-bg:    #F6EBE0;
   --nav-bg:     rgba(247,247,245,0.9);
   --shadow:     0 1px 2px rgba(20,20,20,.04), 0 4px 12px rgba(20,20,20,.04);
@@ -16,25 +16,25 @@
   --hero-bg:    #2B3440;
   --hero-bg2:   #333F4E;
   --hero-text:  #F1F0EC;
-  --hero-muted: #B7BEC4;
+  --hero-muted: #C9CFD4;
   --hero-acc:   #9BC2B8;
   /* Type scale — shared sizes for badges, meta text, list/card text, and body copy.
      Bumped up under the mobile media query below instead of tuning ~30 selectors by hand. */
-  --fs-2xs:  11px;
-  --fs-xs:   12.5px;
-  --fs-sm:   13.5px;
-  --fs-md:   14.5px;
-  --fs-base: 15.5px;
-  --fs-h3:   15px;
+  --fs-2xs:  12px;
+  --fs-xs:   13.5px;
+  --fs-sm:   14.5px;
+  --fs-md:   15.5px;
+  --fs-base: 16.5px;
+  --fs-h3:   16px;
 }
 @media (max-width: 700px) {
   :root {
-    --fs-2xs:  11.5px;
-    --fs-xs:   13px;
-    --fs-sm:   14.5px;
-    --fs-md:   15.5px;
-    --fs-base: 16.5px;
-    --fs-h3:   16px;
+    --fs-2xs:  12.5px;
+    --fs-xs:   14px;
+    --fs-sm:   15px;
+    --fs-md:   16px;
+    --fs-base: 17px;
+    --fs-h3:   16.5px;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -44,7 +44,7 @@
     --surface2:  #222426;
     --border:    #2E3033;
     --text:      #EDEDEB;
-    --muted:     #9A9C9F;
+    --muted:     #B0B2B5;
     --accent:    #8FB6C2;
     --warm:      #D9A97C;
     --warm-bg:   #2A2015;
@@ -58,7 +58,7 @@
   --surface2:  #222426;
   --border:    #2E3033;
   --text:      #EDEDEB;
-  --muted:     #9A9C9F;
+  --muted:     #B0B2B5;
   --accent:    #8FB6C2;
   --warm:      #D9A97C;
   --warm-bg:   #2A2015;
@@ -135,6 +135,16 @@ nav {
   overflow: hidden;
   padding: 76px clamp(20px, 5vw, calc((100vw - 1120px) / 2)) 68px;
 }
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('assets/hero-bg.svg') right -2% center / auto 82% no-repeat;
+  opacity: .22;
+  -webkit-mask-image: linear-gradient(90deg, transparent 20%, #000 70%);
+          mask-image: linear-gradient(90deg, transparent 20%, #000 70%);
+  pointer-events: none;
+}
 .hero-inner {
   position: relative;
   z-index: 1;
@@ -142,7 +152,7 @@ nav {
 }
 .eyebrow {
   font-family: 'Outfit', sans-serif;
-  font-size: 11.5px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -171,6 +181,13 @@ h1 {
   margin-bottom: 22px;
 }
 h1 em { font-style: italic; color: var(--hero-acc); }
+h1 .h1-pre {
+  display: block;
+  font-size: .5em;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  opacity: .85;
+}
 .hero-meta {
   display: flex;
   flex-wrap: wrap;
@@ -458,7 +475,7 @@ h3 {
 }
 .sched-row {
   display: grid;
-  grid-template-columns: 112px 1fr;
+  grid-template-columns: 128px 1fr;
   border-bottom: 1px solid var(--border);
   background: var(--surface);
   transition: background .13s;
@@ -524,13 +541,19 @@ footer strong { color: var(--hero-text); }
 footer .brand-tag { color: var(--hero-muted); }
 
 /* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 1280px) {
+  .hero::before { opacity: .14; }
+}
+@media (max-width: 560px) {
+  .hero::before { display: none; }
+}
 @media (max-width: 860px) {
   .cfp-layout { grid-template-columns: 1fr; }
   .cfp-sidebar { position: static; }
   .styled-list { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
-  .sched-time { font-size: 11px; padding-inline: 12px 10px; }
+  .sched-time { font-size: 12px; padding-inline: 12px 10px; }
   .sched-row { grid-template-columns: 95px 1fr; }
   h1 { font-size: 2rem; }
 }

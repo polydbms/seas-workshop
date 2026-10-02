@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="545 135 625 330">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 1 L9 5 L0 9" fill="none" stroke="#9BC2B8" stroke-width="1.4"/>
+    </marker>
+  </defs>
+
+  <g stroke="#9BC2B8" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- code editor window -->
+    <rect x="560" y="150" width="270" height="300" rx="14"/>
+    <line x1="560" y1="188" x2="830" y2="188"/>
+    <circle cx="582" cy="169" r="4"/>
+    <circle cx="598" cy="169" r="4"/>
+    <circle cx="614" cy="169" r="4"/>
+
+    <!-- code lines -->
+    <g stroke-width="5" opacity=".9">
+      <line x1="588" y1="218" x2="660" y2="218"/>
+      <line x1="612" y1="244" x2="740" y2="244"/>
+      <line x1="636" y1="270" x2="700" y2="270"/>
+      <line x1="636" y1="296" x2="790" y2="296"/>
+      <line x1="612" y1="322" x2="690" y2="322"/>
+      <line x1="588" y1="348" x2="620" y2="348"/>
+      <line x1="588" y1="384" x2="680" y2="384"/>
+      <line x1="612" y1="410" x2="760" y2="410"/>
+    </g>
+
+    <!-- lines of code feed into workflow steps -->
+    <g marker-end="url(#arr)">
+      <path d="M800 244 C 860 244, 860 220, 908 220"/>
+      <path d="M800 384 C 860 384, 860 380, 908 380"/>
+      <path d="M932 220 C 980 220, 980 300, 1018 300"/>
+      <path d="M932 380 C 980 380, 980 300, 1018 300"/>
+      <path d="M1042 300 L 1112 300"/>
+    </g>
+
+    <!-- workflow steps -->
+    <g fill="#2B3440">
+      <rect x="908" y="208" width="24" height="24" rx="6"/>
+      <rect x="908" y="368" width="24" height="24" rx="6"/>
+      <circle cx="1030" cy="300" r="12"/>
+    </g>
+
+    <!-- verified output -->
+    <circle cx="1136" cy="300" r="22" fill="#2B3440"/>
+    <path d="M1126 300 L 1133 308 L 1147 292" stroke-width="2.2"/>
+
+    <!-- agent iteration loop -->
+    <path d="M1030 286 C 1030 200, 960 160, 938 206" stroke-dasharray="5 6" marker-end="url(#arr)"/>
+  </g>
+</svg>
