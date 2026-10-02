@@ -1,6 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SEAS @ FSE '27</title>
+<script>document.documentElement.classList.add('js');</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500&display=swap">
@@ -19,7 +20,11 @@
 <!-- NAV -->
 <nav>
   <a class="brand" href="#top"><em>SEAS</em> @ FSE '27 <span class="brand-tag">(Proposal)</span></a>
-  <ul class="nav-links">
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+    <svg class="icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+  </button>
+  <ul class="nav-links" id="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#cfp">Call for Papers</a></li>
     <li><a href="#accepted-papers">Accepted Papers</a></li>
@@ -311,3 +316,14 @@
   <p><strong>SEAS @ FSE 2027</strong> <span class="brand-tag">(Proposal)</span> · July 12–16, 2027 · Shenzhen, China</p>
   <p>Contact: <a href="mailto:binger.chen@hu-berlin.de">binger.chen@hu-berlin.de</a></p>
 </footer>
+
+<script>
+  // Mobile menu: toggle the dropdown, and close it after a link is picked
+  const navToggle = document.querySelector('.nav-toggle');
+  navToggle.addEventListener('click', () => {
+    navToggle.setAttribute('aria-expanded', navToggle.getAttribute('aria-expanded') !== 'true');
+  });
+  document.getElementById('nav-links').addEventListener('click', e => {
+    if (e.target.closest('a')) navToggle.setAttribute('aria-expanded', 'false');
+  });
+</script>
