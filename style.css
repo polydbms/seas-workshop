@@ -354,6 +354,8 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+  filter: contrast(1.08) saturate(1.05);
 }
 .org-card h3 { font-size: var(--fs-md); margin-bottom: 2px; }
 .org-affil { font-family: 'Outfit', sans-serif; font-size: var(--fs-xs); color: var(--muted); max-width: none; }
