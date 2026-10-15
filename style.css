@@ -359,6 +359,23 @@ h3 {
 }
 .org-card h3 { font-size: var(--fs-md); margin-bottom: 2px; }
 .org-affil { font-family: 'Outfit', sans-serif; font-size: var(--fs-xs); color: var(--muted); max-width: none; }
+.org-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 16px 40px;
+  margin-top: 14px;
+  padding: 12px 24px;
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.org-logos img { height: 34px; width: auto; max-width: 200px; object-fit: contain; }
+.org-logos img.logo-hu { height: 52px; }
+.org-logos img.logo-hpi { height: 44px; }
+.org-logos img.logo-tencent { height: 22px; }
 
 /* ── CFP (merged: intro + topics + submission types + dates) ── */
 .cfp-layout {
