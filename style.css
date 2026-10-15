@@ -37,34 +37,6 @@
     --fs-h3:   16.5px;
   }
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg:        #17181A;
-    --surface:   #1D1F21;
-    --surface2:  #222426;
-    --border:    #2E3033;
-    --text:      #EDEDEB;
-    --muted:     #B0B2B5;
-    --accent:    #8FB6C2;
-    --warm:      #D9A97C;
-    --warm-bg:   #2A2015;
-    --nav-bg:    rgba(23,24,26,0.92);
-    --shadow:    0 1px 3px rgba(0,0,0,.35), 0 3px 10px rgba(0,0,0,.28);
-  }
-}
-:root[data-theme="dark"] {
-  --bg:        #17181A;
-  --surface:   #1D1F21;
-  --surface2:  #222426;
-  --border:    #2E3033;
-  --text:      #EDEDEB;
-  --muted:     #B0B2B5;
-  --accent:    #8FB6C2;
-  --warm:      #D9A97C;
-  --warm-bg:   #2A2015;
-  --nav-bg:    rgba(23,24,26,0.92);
-  --shadow:    0 1px 3px rgba(0,0,0,.35), 0 3px 10px rgba(0,0,0,.28);
-}
 
 /* ── Reset & Base ────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
