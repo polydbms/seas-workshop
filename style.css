@@ -78,7 +78,6 @@ nav {
   flex-shrink: 0;
 }
 .brand em { font-style: normal; color: var(--accent); }
-.brand-tag { font-weight: 500; font-size: 0.8em; color: var(--muted); }
 .nav-links {
   display: flex;
   gap: 2px;
@@ -568,7 +567,6 @@ footer {
 footer p { font-family: 'Outfit', sans-serif; font-size: var(--fs-sm); color: var(--hero-muted); max-width: none; }
 footer a { color: var(--hero-acc); }
 footer strong { color: var(--hero-text); }
-footer .brand-tag { color: var(--hero-muted); }
 
 /* ── Responsive ──────────────────────────────────────── */
 @media (max-width: 1280px) {
@@ -592,3 +590,6 @@ footer .brand-tag { color: var(--hero-muted); }
   .org-card { flex-direction: column; text-align: center; }
   .org-affil { text-align: center; }
 }
+
+.fse-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.fse-link:hover { text-decoration-thickness: 2px; }
