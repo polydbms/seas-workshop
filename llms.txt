@@ -4,7 +4,7 @@
 
 Website: https://seas-workshop.org/
 Host conference: https://conf.researchr.org/home/fse-2027
-Contact: binger.chen@hu-berlin.de
+Contact: binger.chen [at] hu-berlin.de
 
 ## Important dates
 
