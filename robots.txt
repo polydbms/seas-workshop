@@ -1,0 +1,5 @@
+# All crawlers welcome, including AI/LLM crawlers.
+User-agent: *
+Allow: /
+
+Sitemap: https://seas-workshop.org/sitemap.xml

@@ -1,0 +1,71 @@
+# SEAS @ FSE 2027
+
+> SEAS is the 1st International Workshop on Software Engineering for Agentic Scientific Workflows, a one-day workshop co-located with FSE 2027 (ACM International Conference on the Foundations of Software Engineering) in Shenzhen, China, on July 12 or 13, 2027 (the exact day is set by FSE). It brings software engineering, scientific workflow, and AI researchers together to engineer agentic scientific workflows as reliable, end-to-end systems.
+
+Website: https://seas-workshop.org/
+Host conference: https://conf.researchr.org/home/fse-2027
+Contact: binger.chen@hu-berlin.de
+
+## Important dates
+
+All deadlines are 23:59 Anywhere on Earth (AoE, UTC-12).
+
+- Submission deadline: February 11, 2027
+- Author notification: March 18, 2027
+- Camera-ready deadline: April 8, 2027
+- Workshop: July 12 or July 13, 2027, as scheduled by FSE
+
+## Call for papers
+
+SEAS invites contributions on the software engineering of agentic scientific workflows, from specification and modeling to validation, provenance, and domain applications. Research, experience reports, position papers, and demonstrations are welcome from the software engineering, scientific workflow, AI, data science, and process mining communities.
+
+The submission site is not open yet.
+
+### Submission types
+
+All accepted contributions are published as extended abstracts in the ACM Digital Library. Each submission is reviewed by at least three program committee members.
+
+- Research & Experience (up to 5 pages): preliminary results, empirical findings, methods, or lessons learned.
+- Position & Vision (up to 4 pages): emerging challenges, conceptual perspectives, or research directions.
+- Demo, Tool & Dataset (up to 3 pages): systems, datasets, benchmarks, workflow environments, or other community resources.
+
+Per SIGSOFT policy, organizers and their directly supervised students, postdocs, and employees may not submit. At least one author of each accepted paper must register for the workshop.
+
+A Best Contribution Award will be presented. Selected papers will be invited to submit extended versions to a potential special issue of ACM Transactions on Autonomous and Adaptive Systems (TAAS).
+
+### Topics of interest
+
+- Scientific intent and workflow specification
+- Modeling and design of agentic scientific workflows
+- Dynamic planning, workflow composition & runtime adaptation
+- Workflow characteristics and knowledge representation
+- Coordination among agent, tool, data, model, and human
+- Data management and data engineering
+- Scientific constraints, compliance, and workflow invariants
+- Process mining & analytics from workflow traces
+- Coordination of multi-agent scientific workflows
+- Validation, conformance checking, and assurance
+- Failure diagnosis in autonomous scientific processes
+- Provenance, reproducibility, and traceability
+- Scientific workflow evolution and conclusion stability
+- Human oversight and scientific decision-making
+- Evaluation and benchmarking of agentic workflows
+- Languages, platforms, and infrastructure
+- Domain-specific applications and case studies
+- Empirical studies and experience reports
+- Safety and privacy over agentic workflows
+
+## Program (tentative)
+
+Keynote, two spotlight paper sessions, a poster & demo session, a panel discussion, an interactive working session on terminology, challenges, and research agenda, and the Best Contribution Award. The full schedule is at https://seas-workshop.org/#program
+
+## Organizers
+
+- Binger Chen, Humboldt-Universität zu Berlin, Germany
+- Saimir Bala, Hasso Plattner Institute, Germany
+- Chao Peng, Tencent, China
+- Haralampos Gavriilidis, ICSI & UC Berkeley, USA
+- Lingming Zhang, University of Illinois Urbana-Champaign, USA
+- Lars Grunske, Humboldt-Universität zu Berlin, Germany
+
+The program committee is listed at https://seas-workshop.org/#committee
