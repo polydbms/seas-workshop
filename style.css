@@ -1,3 +1,34 @@
+/* ── Fonts (self-hosted, SIL OFL 1.1 — see assets/fonts/OFL.txt) ── */
+/* Latin subset, served locally so visitors' IPs aren't sent to Google */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/instrument-serif-latin.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/instrument-serif-italic-latin.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(assets/fonts/outfit-latin.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url(assets/fonts/dm-sans-latin.woff2) format('woff2');
+}
+
 /* ── Tokens ──────────────────────────────────────────── */
 /* Muted, low-saturation palette — dusty teal + terracotta instead of vivid brand colors */
 :root {
